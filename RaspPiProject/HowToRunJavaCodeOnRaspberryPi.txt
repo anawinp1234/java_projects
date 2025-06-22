@@ -1,0 +1,19 @@
+To compile Java code on Raspberry Pi
+————————————————
+
+javac -classpath .:classes:/opt/pi4j/lib/'*' -d . LedFun1.java 
+
+
+To run java code
+—————————
+
+sudo WIRINGPI_GPIOMEM=1 java -classpath /opt/pi4j/lib/pi4j-core.jar:. LedFun1
+
+
+———
+
+
+javac -classpath .:classes:/opt/pi4j/lib/'*' -d . LedFun1.java && sudo WIRINGPI_GPIOMEM=1 java -classpath /opt/pi4j/lib/pi4j-core.jar:. LedFun1
+
+
+while true; do sudo WIRINGPI_GPIOMEM=1 java -classpath /opt/pi4j/lib/pi4j-core.jar:. LedFun1; sleep 20; done

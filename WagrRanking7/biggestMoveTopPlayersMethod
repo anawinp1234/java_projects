@@ -1,0 +1,66 @@
+public void biggestMovesTopPlyrs(int biggestMoves, int NumOfPlyrs) {
+                //these are for big moves 
+        int topList1 = biggestMoves;
+        int topNumOfPlyrs1 = NumOfPlyrs;
+    
+        int findMoveInt = 0;
+        
+        // ArrayList<String> arrList1 = new ArrayList<>();
+        ArrayList<String> field1ArrayList = new ArrayList<>();
+        
+        for (String line : arrListofLines) {
+            String[] field = line.split(" \\| ");
+            //only interested in top 100 players
+            // - convert field[0] to integer before looping thru
+            int fieldZeroInt = Integer.parseInt(field[0].replace(" ", ""));
+            // field[0] is less than 100 add the value to new array list
+            if (fieldZeroInt <= topNumOfPlyrs1) {
+                    // arrList1.add(line);
+                    field1ArrayList.add(field[1].replace(" ", ""));
+                
+            }
+            
+            //abs value    
+            int fieldOneInt = Integer.parseInt(field[1].replace(" ", ""));
+            int fieldOneAbsValue = Math.abs(fieldOneInt);
+            if (fieldOneAbsValue > findMoveInt) {
+                findMoveInt = fieldOneAbsValue;
+                
+            } 
+            
+        } //end of for
+        
+        //making each element in field1ArrayList to be an integer and abosulute
+        ArrayList<Integer> trList = new ArrayList<>();
+        for (String eachElem : field1ArrayList) {
+            // make integer
+            int eachElemInt = Integer.parseInt(eachElem);
+            //abs value
+            int eachElemIntAbs = Math.abs(eachElemInt);
+            trList.add(eachElemIntAbs);
+        }
+        ArrayList<Integer> moveIndexTracker = new ArrayList<>();
+        for (int i = 1; i <= topList1; i++) {
+            //finding the max element
+            int maxMove = Collections.max(trList);
+            //finding the index of max element
+            int maxIndex = trList.indexOf(maxMove);
+            //add index to the tracker
+            
+            if (moveIndexTracker.contains(maxMove)) {
+                continue;
+            } else {
+                moveIndexTracker.add(maxIndex);
+                trList.set(maxIndex, 0);
+            }
+        }
+
+        
+        System.out.println("\nTop " + topList1 + " biggest moves out of the top " + topNumOfPlyrs1 + " players:");
+        for (int eachEl : moveIndexTracker) {
+            // System.out.println(arrList1.get(eachEl));
+            System.out.println(arrListofLines.get(eachEl));
+        }
+        
+
+    }

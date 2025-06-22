@@ -1,0 +1,10 @@
+1. How do you want to use it:
+    objIO.biggestMovesTopPlyrs(tm, tr);
+    objIO.biggestMovesTopPlyrs(tm, tr );
+
+2. slice the arrListofLines to get the first tr --> give it a tr_ArrayList
+
+3. loop through tr_ArrayList:
+4. inside loop, split to get F[1], make it int, and abs, make sure you don;t lose track of the idex in each loop
+5. inside loop, 
+        1. keep track off index of tr_arrayLuist while looping through tr_Array find 

@@ -1,0 +1,98 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "LoopPrac12",
+            "request": "launch",
+            "mainClass": "LoopPrac.LoopPrac12",
+            "projectName": "sample_28af7be3"
+        },
+        {
+            "type": "java",
+            "name": "LoopPrac12",
+            "request": "launch",
+            "mainClass": "LoopPrac12",
+            "projectName": "sample_28af7be3"
+        },
+        {
+            "type": "java",
+            "name": "TestScanner2",
+            "request": "launch",
+            "mainClass": "TestScanner2",
+            "projectName": "sample_68a590da"
+        },
+        {
+            "type": "java",
+            "name": "TestPp",
+            "request": "launch",
+            "mainClass": "TestPp",
+            "projectName": "sample_68a590da"
+        },
+        {
+            "type": "java",
+            "name": "Calculator",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "projectName": "sample_68a590da"
+        },
+        {
+            "type": "java",
+            "name": "Ch1Pg13",
+            "request": "launch",
+            "mainClass": "Ch1Pg13",
+            "projectName": "sample_68a590da"
+        },
+        {
+            "type": "java",
+            "name": "Ch1Pg12",
+            "request": "launch",
+            "mainClass": "Ch1Pg12",
+            "projectName": "sample_68a590da"
+        },
+        {
+            "type": "java",
+            "name": "Chapter1Page12",
+            "request": "launch",
+            "mainClass": "Chapter1Page12",
+            "projectName": "sample_68a590da"
+        },
+        {
+            "type": "java",
+            "name": "PrintShit2",
+            "request": "launch",
+            "mainClass": "PrintShit2",
+            "projectName": "sample_68a590da"
+        },
+        {
+            "type": "java",
+            "name": "PrintShit",
+            "request": "launch",
+            "mainClass": "PrintShit",
+            "projectName": "sample_68a590da"
+        },
+        {
+            "type": "java",
+            "name": "Test1",
+            "request": "launch",
+            "mainClass": "Test1",
+            "projectName": "sample_68a590da"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "sample_68a590da"
+        }
+    ]
+}
